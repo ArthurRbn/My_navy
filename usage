@@ -1,5 +1,7 @@
-USAGE
-     ./navy [first_player_pid] navy_positions
-DESCRIPTION
-	first_player_pid: only for the 2nd player. pid of the first player.
-  	navy_positions: file representing the positions of the ships contained in the maps folder.
+The aim of this project was to create a program to play battleship game on two terminals
+which communicate with signals SIGUSR1 and SIGUSR2.
+
+Build the binary thanks to the Makefile and then you can :
+- Launch the game : ./navy maps/{file}
+- Connect the enemy on a second terminal : ./navy [first_play_pid] maps/{file}
+- Get some help : ./navy -h
